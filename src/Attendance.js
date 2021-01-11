@@ -50,7 +50,7 @@ export default function Attendance() {
         <div >
             <div id="Blockl">
                 <div id="names" >
-                {start?null:<button onClick={()=>{
+                {start || liste.length===0?null:<button onClick={()=>{
                 setstart(!start);
                 setfullname(liste[index].name);
                 Cross("Begin");
